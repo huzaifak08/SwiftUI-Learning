@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Learning
-//
-//  Created by Huzaifa Khan  on 05/07/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -22,6 +15,18 @@ struct ContentView: View {
 //                    .background(Color.red)
 //                    .frame(width: 200,height: 200)
                     .padding(.bottom)
+                
+                VStack(spacing: 1){
+                    Image(systemName:"cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 180,height: 180)
+                    
+                    Text("76°")
+                        .font(.system(size: 70,weight: .medium))
+                        .foregroundColor(.white)
+                }
                 
                 Spacer() // Expand
                 
