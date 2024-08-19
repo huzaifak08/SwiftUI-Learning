@@ -54,8 +54,10 @@ struct WeatherDayView: View {
                 .foregroundColor(.white)
             
             Image(systemName: imageName)
-                .renderingMode(.original)
+                .symbolRenderingMode(.palette)
                 .resizable()
+//                .foregroundColor(.blue)
+                .foregroundStyle(.white, .yellow)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40,height: 40)
             
@@ -71,10 +73,19 @@ struct BackgroundView: View {
    var isNight: Bool // Refers to the upper state variable
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue , isNight ? .gray : Color("lightBlue")]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea(.all)
+        
+        // ============ One way for Gradient::
+        
+//        LinearGradient(gradient: Gradient(colors: [isNight ? .black : .blue , isNight ? .gray : Color("lightBlue")]),
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//        .ignoresSafeArea(.all)
+        
+        // ============ Second way for Gradient::
+        
+        ContainerRelativeShape()
+            .fill(isNight ? Color.black.gradient : Color.blue.gradient)
+            .ignoresSafeArea()
     }
 }
 
