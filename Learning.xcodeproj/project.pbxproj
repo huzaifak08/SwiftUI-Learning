@@ -14,6 +14,7 @@
 		528ADECC2C382460005CA6F3 /* LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADECB2C382460005CA6F3 /* LearningTests.swift */; };
 		528ADED62C382460005CA6F3 /* LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADED52C382460005CA6F3 /* LearningUITests.swift */; };
 		528ADED82C382460005CA6F3 /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADED72C382460005CA6F3 /* LearningUITestsLaunchTests.swift */; };
+		52CC9F152C6E4EF400292063 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC9F142C6E4EF400292063 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		528ADED12C382460005CA6F3 /* LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528ADED52C382460005CA6F3 /* LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITests.swift; sourceTree = "<group>"; };
 		528ADED72C382460005CA6F3 /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52CC9F142C6E4EF400292063 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				528ADEBC2C38245F005CA6F3 /* ContentView.swift */,
 				528ADEBE2C382460005CA6F3 /* Assets.xcassets */,
 				528ADEC02C382460005CA6F3 /* Preview Content */,
+				52CC9F142C6E4EF400292063 /* WeatherButton.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				528ADEBD2C38245F005CA6F3 /* ContentView.swift in Sources */,
 				528ADEBB2C38245F005CA6F3 /* LearningApp.swift in Sources */,
+				52CC9F152C6E4EF400292063 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +434,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +464,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
