@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527D09CA2C743F61007CE5BF /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D09C92C743F61007CE5BF /* Framework.swift */; };
+		527D09CC2C7441A8007CE5BF /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527D09CB2C7441A8007CE5BF /* FrameworkGridView.swift */; };
 		528ADEBB2C38245F005CA6F3 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADEBA2C38245F005CA6F3 /* LearningApp.swift */; };
-		528ADEBD2C38245F005CA6F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADEBC2C38245F005CA6F3 /* ContentView.swift */; };
 		528ADEBF2C382460005CA6F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528ADEBE2C382460005CA6F3 /* Assets.xcassets */; };
 		528ADEC22C382460005CA6F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528ADEC12C382460005CA6F3 /* Preview Assets.xcassets */; };
 		528ADECC2C382460005CA6F3 /* LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADECB2C382460005CA6F3 /* LearningTests.swift */; };
 		528ADED62C382460005CA6F3 /* LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADED52C382460005CA6F3 /* LearningUITests.swift */; };
 		528ADED82C382460005CA6F3 /* LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528ADED72C382460005CA6F3 /* LearningUITestsLaunchTests.swift */; };
-		52CC9F152C6E4EF400292063 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC9F142C6E4EF400292063 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		527D09C92C743F61007CE5BF /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		527D09CB2C7441A8007CE5BF /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		528ADEB72C38245F005CA6F3 /* Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528ADEBA2C38245F005CA6F3 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
-		528ADEBC2C38245F005CA6F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		528ADEBE2C382460005CA6F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528ADEC12C382460005CA6F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		528ADEC72C382460005CA6F3 /* LearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +46,6 @@
 		528ADED12C382460005CA6F3 /* LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528ADED52C382460005CA6F3 /* LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITests.swift; sourceTree = "<group>"; };
 		528ADED72C382460005CA6F3 /* LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		52CC9F142C6E4EF400292063 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				528ADEBA2C38245F005CA6F3 /* LearningApp.swift */,
-				528ADEBC2C38245F005CA6F3 /* ContentView.swift */,
 				528ADEBE2C382460005CA6F3 /* Assets.xcassets */,
 				528ADEC02C382460005CA6F3 /* Preview Content */,
-				52CC9F142C6E4EF400292063 /* WeatherButton.swift */,
+				527D09C92C743F61007CE5BF /* Framework.swift */,
+				527D09CB2C7441A8007CE5BF /* FrameworkGridView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528ADEBD2C38245F005CA6F3 /* ContentView.swift in Sources */,
+				527D09CC2C7441A8007CE5BF /* FrameworkGridView.swift in Sources */,
+				527D09CA2C743F61007CE5BF /* Framework.swift in Sources */,
 				528ADEBB2C38245F005CA6F3 /* LearningApp.swift in Sources */,
-				52CC9F152C6E4EF400292063 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
