@@ -15,21 +15,7 @@ struct FrameworkDetailView: View {
     var body: some View {
         VStack{
             
-            HStack{
-                Spacer()
-                
-                Button{
-                    
-                    isShowingDetailView = false
-                    
-                }label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label)) // label will act as white in dark mode and vice versa
-                        .imageScale(.large)
-                        .frame(width: 44,height: 44)
-                    
-                }
-            }
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             
             Spacer()
             
