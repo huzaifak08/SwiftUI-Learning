@@ -41,11 +41,24 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
-            Button{
-                
-            } label: {
-                AFButton(title: "Learn More")
-            }
+            Link("Learn More", destination: URL(string: framework.urlString)!)
+                .environment(\.openURL, OpenURLAction{
+                    url in UIApplication.shared.open(url)
+                    return .handled
+                })
+                .font(.title2)
+                .frame(width: 280,height: 50)
+                .background(Color.red)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            
+//            Button{
+//                
+//                print("Button Pressed");
+//                
+//            } label: {
+//                AFButton(title: "Learn More")
+//            }
         }
     }
 }
