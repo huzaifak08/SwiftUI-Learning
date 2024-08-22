@@ -13,29 +13,22 @@ struct FrameworkGridView: View {
     
         
     var body: some View {
-        NavigationView(content: {
+        
+        // NavigationView has been changed to NavigationStack and one more:
+        NavigationStack{
             
-            ScrollView(content: {
+            List(content: {
                 
-                LazyVGrid(columns: viewModel.columns, content: {
-                    
-                    ForEach(MockData.frameworks ,content: { framework in
-                        
+                ForEach(MockData.frameworks ,content: { framework in
+                    NavigationLink(destination: FrameworkDetailView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)){
                         FrameworkTitleView(framework: framework)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
-                        
-                    })
+                    }
                 })
-                
             })
-            .navigationTitle(" Framework")
-            .sheet(isPresented: $viewModel.isShowingDetailView){
-                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework, isShowingDetailView: $viewModel.isShowingDetailView)
-            }
+            .navigationTitle("Framework")
             
-        })
+        }
+        .accentColor(Color(.label))
         
     }
 }
